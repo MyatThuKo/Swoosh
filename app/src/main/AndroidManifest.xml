@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SkillActivity"></activity>
-        <activity android:name=".BaseActivity" />
+        <activity android:name=".Controller.FinishActivity"></activity>
+        <activity android:name=".Controller.SkillActivity" />
+        <activity android:name=".Controller.BaseActivity" />
         <activity
-            android:name=".LeagueActivity"
-            android:parentActivityName=".WelcomeActivity" />
-        <activity android:name=".WelcomeActivity">
+            android:name=".Controller.LeagueActivity"
+            android:parentActivityName=".Controller.WelcomeActivity" />
+        <activity android:name=".Controller.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

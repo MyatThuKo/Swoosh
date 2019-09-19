@@ -1,9 +1,11 @@
-package com.example.swoosh
+package com.example.swoosh.Controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.swoosh.Utils.EXTRA_LEAGUE
+import com.example.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -30,20 +32,20 @@ class LeagueActivity : BaseActivity() {
         BtnWomenLeague.isChecked = false
         BtnCoEd.isChecked = false
 
-        selectedLeague = "Man"
+        selectedLeague = "Men\'s"
     }
 
     fun onClickWomen(view: View) {
         BtnMensLeague.isChecked = false
         BtnCoEd.isChecked = false
 
-        selectedLeague = "Woman"
+        selectedLeague = "Women\'s"
     }
 
     fun onClickCoEd(view: View) {
         BtnMensLeague.isChecked = false
         BtnWomenLeague.isChecked = false
 
-        selectedLeague = "CoEd"
+        selectedLeague = "Co-Ed\'"
     }
 }
