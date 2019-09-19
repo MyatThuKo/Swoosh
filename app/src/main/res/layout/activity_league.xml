@@ -57,12 +57,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/BtnMensLeague"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onClickMen"
             android:text="Men"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
@@ -71,12 +72,13 @@
             android:textSize="15sp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/BtnWomenLeague"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onClickWomen"
             android:text="Women"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
@@ -85,12 +87,13 @@
             android:textSize="15sp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/BtnCoEd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onClickCoEd"
             android:text="Co-Ed"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
@@ -101,11 +104,11 @@
 
     <Button
         android:id="@+id/BtnLeagueNext"
-        android:onClick="onClickHandler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onClickHandler"
         android:text="Next"
         android:textColor="@android:color/white"
         android:textSize="20sp"
